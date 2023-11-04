@@ -1,6 +1,8 @@
 import 'package:my_app/first_screen.dart';
 
 class BMICalculator extends FirstScreen {
+  const BMICalculator({super.key});
+
   static calculateBMI(int weightCounter, int heightCounter) {
     double heightInMeters = heightCounter / 100.0;
     return weightCounter / (heightInMeters * heightInMeters);

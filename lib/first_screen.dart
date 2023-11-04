@@ -239,14 +239,12 @@ class _FirstScreenState extends State<FirstScreen> {
               ],
             ),
             const SizedBox(height: 20),
-            Container(
-              child: Text(
-                '$state',
-                style: TextStyle(
-                  // Color based on the state
-                  color: getColorForState(state),
-                  fontSize: 30,
-                ),
+            Text(
+              state,
+              style: TextStyle(
+                // Color based on the state
+                color: getColorForState(state),
+                fontSize: 30,
               ),
             )
           ],
